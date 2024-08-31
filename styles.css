@@ -1,0 +1,44 @@
+html,* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(50,80,107);
+  }
+  
+  .Adiy_h2 {
+    margin-top: 3em;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  hr {
+    margin-top: -12px;
+  }
+  
+  .hr_2{
+    margin-top: 20px;
+  }
+  .cb {
+    z-index: 2;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer {
+    background-color: #3A506B;
+    bottom: 0;
+    color: width;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 19.6em;
+  }
