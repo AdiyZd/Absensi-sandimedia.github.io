@@ -35,12 +35,12 @@
   <!-- ijin -->
   <h2 class="Adiy_h2">ABSENSI SANDIMEDIA</h2>
   <hr>
-  <!-- awak cek box -->
+  <!-- awal cek box -->
   <div class="cb">
     <div class="btn-group" role="group" aria-label="Basic outlined example">
-  <button type="button" class="btn btn-outline-primary">MASUK</button>
-  <button type="button" class="btn btn-outline-primary">SETENGAH HARI</button>
-  <button type="button" class="btn btn-outline-primary">SAKIT</button>
+  <button id="masuk" type="button" class="btn btn-outline-primary" onclick="SendToTelegram('MASUK')">MASUK</button>
+  <button id="setengah" type="button" class="btn btn-outline-primary" onclick="SendToTelegram('SETENGAH HARI')">SETENGAH HARI</button>
+  <button id="ijin" type="button" class="btn btn-outline-primary" onclick="SendToTelegram('IJIN SAYA SEDANG SAKIT')">SAKIT</button>
 </div>
   </div>
   <hr class="hr_2">
@@ -61,5 +61,6 @@
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="Main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
