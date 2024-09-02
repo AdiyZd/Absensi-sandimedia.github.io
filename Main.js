@@ -30,17 +30,17 @@ function SendToTelegram(message) {
 
 function main() {
     // Mengambil nilai dari input
-    const username = document.getElementById('username').value.trim(); // Menggunakan trim() untuk menghapus spasi ekstra
+    const username = document.getElementById('username').value;
 
     // Mencari tombol yang aktif (dipilih)
-    const buttonText = document.querySelector('.btn-group .btn-outline-primary.active')?.textContent.trim();
+    const buttonText = document.querySelector('.btn-group .btn-outline-primary.active')?.textContent;
 
     if (!username || !buttonText) {
         alert('Nama pengguna atau pilihan belum dipilih!');
         return;
     }
 
-    // Mengirimkan pesan ke Telegram dengan format yang benar
+    // Mengirimkan pesan ke Telegram
     const message = `NAMA : ${username}\nKETERANGAN: ${buttonText}`;
     SendToTelegram(message);
 }
